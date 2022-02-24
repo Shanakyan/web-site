@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        span.ingredient{
+            color:#f00;
+        }
+        q::after{
+            content:">>";
+            color:red;
+        }
+        q::before{
+            content:"<<";
+            color:blue;
+        }
+        .list {
+           /* position:absolute;*/
+            margin: 10px;
+            background: lightgrey;
+            padding: 20px;          
+            
+        }
+        .box1 {
+            position:relative;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 100px;
+            background-color: antiquewhite;
+        }
+        div{
+            float:left;
+        }
+        .box2{
+            position:relative;
+            top:200px;
+            left:0;
+            height:100px;
+            width:50px;
+            background-color:brown;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <q>Список стандартных псевдоклассов</q>
+    <p><span class="ingredient">Псевдокласс</span> в <span class="ingredient">CSS</span> — это ключевое слово, добавленное к селектору, которое определяет его особое состояние</p>
+
+    <h2>Список дел</h2>
+    <ul>
+        <li class="list">купить <span class="ingredient">продукты</span> </li>
+        <li class="list">написать код</li>
+        <li class="list">читать книгу</li>
+        <li class="list">заниматься спортом</li>
+        <li class="list">приготовить обед</li>
+        <li class="list">забрать ребенка из школы </li>
+    </ul>
+    <hr />
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name = "viewport" content="widht-device-width, initial-scale=1.0"
+  
+    <title>homework</title>
+    <style>
+            .box-padding{
+                background-color:#f1f1f1;
+                height:150px;
+            } 
+            .box-padding p{
+                text-align:center;
+                padding:25%;
+                margin: 0;          
+            }
+            .box-border{
+                background-color:darkorchid;
+                border:2px solid black;
+                padding:20px;
+                position:relative;
+            }
+            .box-margin{
+                width:300px;
+                margin: 25px auto;
+                background-color:aqua;
+                padding:20px;
+            }
+            #padding{
+                position:absolute;
+                top:0px;
+                left:0px;
+            }            
+           #border{
+                position:absolute;
+                top:-15px;
+                left:40%;        
+            }
+           #margin{
+               position:absolute;
+               top:-20px;
+               left:-20px;
+           }
+           body{
+               font-family:'Times New Roman', Times, serif;
+           }           
+    </style>
+    
+    
+</head>
+    <body >
+        
+        <div class="box-margin">        
+            <div class="box-border">
+                    <span id="margin">margin</span>
+                    <span id="border">border</span>
+                    <span id="padding">padding</span>
+                <div class="box-padding">
+
+                    <p>Контент</p>
+
+                </div>
+            </div>
+
+        </div>
+    
+   
+
+
+
+</body>
+</html>
