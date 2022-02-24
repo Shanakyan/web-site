@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Исользование тени в качестве границы</title>
+    <style>
+         #content {
+            margin: 70px auto 0 auto;
+            width: 320px;
+            height: 140px;
+            position: relative;
+            box-shadow:
+                0 0 0 20px violet,
+                0 0 0 22px darkviolet,
+                0 0 10 42px aquamarine;
+            
+        }
+
+         /*размещение текста*/
+         #content span {
+                display: block;
+                position: absolute;
+            }
+
+            #content #txt-margin {
+                top: -45px;
+                left: -40px;
+            }
+
+            #content #txt-border {
+                top: -38px;
+                left: 40%;
+            }
+
+            #content #txt-padding {
+                top: -22px;
+                left: -20px;
+            }
+
+            #content p {
+                margin: 0;
+                padding-top: 18%;
+                text-align: center;
+            }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>Контент</p>
+        <span id="txt-margin">margin</span><span id="txt-border">border</span><span id="txt-padding">padding</span>
+    </div>
+</body>
+</html>

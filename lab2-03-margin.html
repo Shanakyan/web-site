@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        #content {
+            margin: 50px auto 20px auto;
+            width: 320px;
+            height: 140px;
+            outline: 20px solid green;
+            border: 2px solid  violet;
+            position: relative;
+        }
+
+            #content:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border: 20px solid red; /*violet*/
+                z-index: -1;
+            }
+
+            /*размещение текста*/
+            #content span {
+                display: block;
+                position: absolute;
+            }
+
+            #content #txt-margin {
+                top: -25px;
+                left: -20px;
+            }
+
+            #content #txt-border {
+                top: -18px;
+                left: 40%;
+            }
+
+            #content #txt-padding {
+                top: 0px;
+                left: 0px;
+            }
+
+            #content p {
+                margin: 0;
+                padding-top: 18%;
+                text-align: center;
+            }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>Контент</p>
+        <span id="txt-margin">margin</span><span id="txt-border">border</span><span id="txt-padding">padding</span>
+    </div>
+</body>
+</html>

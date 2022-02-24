@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>freelance</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Logotip</h1>
+        </nav>
+    </header>
+
+
+    <a href="https://google.com" target="_blank">Ссылка</a><br /><br /><br /><br />
+
+
+
+    <input type="text" name="name" value="" />
+    <input type="password" name="name" value="" />
+    <div>
+
+        <input type="radio" name="beer" value="lager" />Светлое пиво
+
+
+        <input type="radio" name="beer" value="dark" />Темное пиво
+
+    </div>
+    <br />
+    <div>
+        <p>
+            <input type="checkbox" name="car" value="yes" />Наличие авто
+        </p>
+    </div>
+    <div>
+        <p>
+            <input type="file" name="file" />
+        </p>
+    </div>
+    <div>
+        <textarea name="text" rows="30" cols="20"></textarea>
+    </div>
+    <div>
+        <select name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+    <br />
+    <form action="#" method="post" enctype="multipart/form-data"> 
+        <div>
+            <p>Имя</p>
+            <p>
+                <input tabindex="1" type="text" name="name" value="name" />
+            </p>
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input  tabindex="2" type="password" name="password" value="" />
+            <p>Телефон</p>
+            <input tabindex="3" type="tel" name="phone" id="phone" />
+            <p>Пол</p>
+            <div>
+                <input checked tabindex="4" type="radio" name="gander" value="male" />Мужской
+            </div>
+            <div>
+                <input tabindex="5" type="radio" name="gander" value="female" />Женский
+            </div>
+            <p>Имущество</p>
+            <div>
+                <input  tabindex="6" checked type="checkbox" name="bake" value="yes" />bake
+            </div>
+            <div>
+                <input tabindex="7" type="checkbox" name="car" value="yes" />Car
+            </div>
+            <div>
+                <input tabindex="8" disabled type="checkbox" name="home" value="yes" />Home
+            </div>
+            <div>
+                <p>Дополнительная информация</p>
+                <textarea name="text"> </textarea>
+            </div>
+            
+        </div>
+        <div>
+              <p>Прикрепить фото</p>
+              <input tabindex="9" type="file" >
+           
+        </div>
+        <div>
+            <p>Любимый цвет</p>
+            <select tabindex="10" name="color">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option selected value="yellow">yellow</option>
+            </select>
+            <div>
+                <p>Действия</p>
+                <button tabindex="11"name="submit">Отправить</button>
+                <button tabindex="12"name="reset">Очистить</button>
+            </div>
+
+        </div>
+    </form>
+
+
+
+</body>
+</html>

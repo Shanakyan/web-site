@@ -6,9 +6,9 @@
     <style>
 
         
-        .cycle{
+        /*.cycle{*/
             /*overflow:hidden;*/
-            width: 100px;
+            /*width: 100px;
             height: 100px;
             background-color: red;
             border: 5px dotted;
@@ -17,7 +17,7 @@
 
                }
         .cycle:hover{
-            background-color:aqua;
+            background-color:aqua;*/
         }
        /* .arr {
             width: 0px;
@@ -29,12 +29,12 @@
             .arr:hover {
                 border-color: blue transparent;
             }*/
-        .trans {
+        /*.trans {
             width: 0px;
             height: 0px;
-            border: 35px solid;
+            border: 35px solid;*/
            /* background-color:aquamarine;*/
-            border-color: antiquewhite blueviolet;
+            /*border-color: antiquewhite blueviolet;
             border: 50px;
             border-radius:50%;
             
@@ -42,7 +42,7 @@
         .trans:hover{
             border-color: antiquewhite blueviolet;
        
-        }
+        }*/
 
         /*p {*/
             /*word-break:break-all;*/
@@ -52,11 +52,32 @@
             margin: 0 100px;
             overflow: hidden;
         }*/
-        .break {
+        /*.break {
             word-wrap:break-word;
             background-color:aquamarine;
         }
-       
+       */
+        
+
+        }
+        .child{
+            width:100px;
+            height:100px;
+            background-color:red;
+
+            position:absolute;
+            
+        }
+        .parent {
+            position: relative;
+            border: 2px solid #808080;
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            
+            
+           
+            
 
     </style>
 </head>
@@ -70,18 +91,13 @@
         оченьдлинноесловооченьдлинноесловооченьдлинноесловоочень длинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноесловооченьдлинноеслово
     </p>-->
     
-    <section>
-       
-        <div class="cycle">
+    <div class="parent">
+        
 
-        </div>
-        <div class="trans">
-
-        </div>
-       
-        <div class="arr"></div>
-    </section>
-    
+    </div>
+    <div class="child">
+        <p>POSITION</p>
+    </div>
 
 </body>
 </html>

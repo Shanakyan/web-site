@@ -1,63 +1,87 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <style>
-        span.ingredient{
-            color:#f00;
-        }
-        q::after{
-            content:">>";
-            color:red;
-        }
-        q::before{
-            content:"<<";
-            color:blue;
-        }
-        .list {
-           /* position:absolute;*/
-            margin: 10px;
-            background: lightgrey;
-            padding: 20px;          
-            
-        }
-        .box1 {
-            position:relative;
-            top: 0;
-            left: 0;
-            height: 200px;
-            width: 100px;
-            background-color: antiquewhite;
-        }
-        div{
-            float:left;
-        }
-        .box2{
-            position:relative;
-            top:200px;
-            left:0;
-            height:100px;
-            width:50px;
-            background-color:brown;
-        }
-    </style>
+<head>  
+    
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        body{
+            padding:30px;
+        }
+        .block p{
+            font-size:18px;
+            line-height:30px;
+            margin-bottom:20px;
+           
+            
+        }
+        .block p:nth-child(odd){
+            background-color:bisque;
+        }
+        /*.block:hover{
+            color:antiquewhite;
+        }*/
+        
+        .link{
+            color:red;
+        }
+        .link:hover{
+            color:blue;
+        }
+        .link:active {
+            color: aqua;
+        }
+        .textinput {
+            border: 1px solid #808080;
+            height: 50px;
+            width: 300px;
+            font-size:18px;
+            padding: 0px 15px;
+            margin:0px 0px 10px 0px;
+        }
+        .textinput:focus{
+            box-shadow:0,0,10px, rgba(0,0,0,8);
+        }
+        .textbutton{
+            display:block;
+            height:50px;
+            width:300px;
+            border-radius:15px;
+            font-size:18px;
+            background-color:#808080;
+            text-transform:uppercase;
+        }
+        .list{
+
+        }
+        .list li{
+            font-size:18px;
+            margin-bottom:20px;
+        }
+        .list li:first-child{
+            color:red;
+        }
+        .list li:nth-child(3){
+            text-decoration:underline;
+        }
+    </style>
 </head>
 <body>
-    <q>Список стандартных псевдоклассов</q>
-    <p><span class="ingredient">Псевдокласс</span> в <span class="ingredient">CSS</span> — это ключевое слово, добавленное к селектору, которое определяет его особое состояние</p>
+    <div class="block">
+        <p> <a href="google.com" class="link">Ссылка</a>Текстовый абзац. </p>
+        <p>Урок CSS.Псевдоклассы.Псевдокласс в CSS — это ключевое слово, добавленное к селектору, которое определяет его особое состояние. </p>
+        <p>Псевдоклассы дают возможность стилизовать элемент на основе не только отношений в DOM-дереве, но и основываясь на внешних факторах, таких как история посещений (например, :visited), состояние содержимого (вроде :checked у некоторых элементов формы) или позиции курсора мыши (например, :hover определяет, находится ли курсор мыши над элементом).</p>
+    </div>
+    <form action="#">
+        <input type="text" class="textinput" />
+        <button class="textbutton" type="submit">Отправить</button>
+    </form>
+    <ul class="list">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
 
-    <h2>Список дел</h2>
-    <ul>
-        <li class="list">купить <span class="ingredient">продукты</span> </li>
-        <li class="list">написать код</li>
-        <li class="list">читать книгу</li>
-        <li class="list">заниматься спортом</li>
-        <li class="list">приготовить обед</li>
-        <li class="list">забрать ребенка из школы </li>
     </ul>
-    <hr />
-    <div class="box1"></div>
-    <div class="box2"></div>
 </body>
 </html>
